@@ -17,7 +17,6 @@ struct ContentView: View {
                 }) {
                 Text("+")
                 }
-                Text("hi")
             }
             .padding()
             Spacer()
