@@ -11,6 +11,8 @@
 		13A71A6F2A38C01D00AFC84D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A71A6E2A38C01D00AFC84D /* ContentView.swift */; };
 		13A71A712A38C01E00AFC84D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A71A702A38C01E00AFC84D /* Assets.xcassets */; };
 		13A71A742A38C01E00AFC84D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A71A732A38C01E00AFC84D /* Preview Assets.xcassets */; };
+		13A71A7B2A38C09000AFC84D /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A71A7A2A38C09000AFC84D /* ToDoItem.swift */; };
+		13A71A7D2A38C3FE00AFC84D /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A71A7C2A38C3FE00AFC84D /* NewToDoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		13A71A6E2A38C01D00AFC84D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13A71A702A38C01E00AFC84D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13A71A732A38C01E00AFC84D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13A71A7A2A38C09000AFC84D /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		13A71A7C2A38C3FE00AFC84D /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 		13A71A602A38C01D00AFC84D = {
 			isa = PBXGroup;
 			children = (
+				13A71A7C2A38C3FE00AFC84D /* NewToDoView.swift */,
 				13A71A6B2A38C01D00AFC84D /* To Do App */,
 				13A71A6A2A38C01D00AFC84D /* Products */,
 			);
@@ -53,6 +58,7 @@
 			children = (
 				13A71A6C2A38C01D00AFC84D /* To_Do_AppApp.swift */,
 				13A71A6E2A38C01D00AFC84D /* ContentView.swift */,
+				13A71A7A2A38C09000AFC84D /* ToDoItem.swift */,
 				13A71A702A38C01E00AFC84D /* Assets.xcassets */,
 				13A71A722A38C01E00AFC84D /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				13A71A6F2A38C01D00AFC84D /* ContentView.swift in Sources */,
 				13A71A6D2A38C01D00AFC84D /* To_Do_AppApp.swift in Sources */,
+				13A71A7B2A38C09000AFC84D /* ToDoItem.swift in Sources */,
+				13A71A7D2A38C3FE00AFC84D /* NewToDoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
