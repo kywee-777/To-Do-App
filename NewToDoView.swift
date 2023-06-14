@@ -10,25 +10,39 @@ import SwiftUI
 struct NewToDoView: View {
     @State var title: String
     @State var isImportant: Bool
+    @Binding var toDoItems: [ToDoItem]
+    @Binding var showNewTask: Bool
+    
     
     var body: some View {
-        VStack {
+        VStack(spacing: 15.0) {
             Text("Add a new task")
+            
             TextField("Enter the task description", text: $title)
+            
             Toggle(isOn: $isImportant) {
                 Text("Is it important?")
-                Button(action: {
-                  
-                }) {
-                    Text("Add")
-                }
             }
-        } .padding()
+            
+            Button(action: {
+                self.addTask(title: self.title, isImportant: self.isImportant)
+                self.showNewTask = false
+            }) {
+                Text("Add")
+//
+            }
+        }
     }
-}
+    
+    
+    struct NewToDoView_Previews: PreviewProvider {
+        static var previews: some View {
+            NewToDoView(title: "", isImportant: false, toDoItems: .constant([]), showNewTask: .constant(true))
+        }
+    }
+    private func addTask(title: String, isImportant: Bool = false) {
 
-struct NewToDoView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewToDoView(title: "", isImportant: false)
+        let task = ToDoItem(title: title, isImportant: isImportant)
+        toDoItems.append(task)
     }
 }
